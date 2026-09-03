@@ -29,9 +29,11 @@ export function Hero() {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
-            <Button size="lg" variant="cta" onClick={scrollToPricing} className="w-full sm:w-auto px-8 py-3 shadow-yellow hover:scale-105 transition-transform text-lg">
-              {t.hero.ctaPrimary}
-            </Button>
+            <a href="#pricing" className="w-full sm:w-auto">
+              <Button size="lg" variant="cta" className="w-full px-8 py-3 shadow-[0_0_30px_rgba(255,196,0,0.5)] animate-pulse hover:scale-105 transition-transform text-lg border-2 border-white/50">
+                {t.hero.ctaPrimary}
+              </Button>
+            </a>
             <a href="#curriculum" className="text-sm font-bold text-white/80 hover:text-white transition-colors">
               {t.hero.ctaSecondary}
             </a>

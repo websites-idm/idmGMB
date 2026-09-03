@@ -37,7 +37,6 @@ export const dictionaries = {
     },
     highlights: [
       { icon: "Calendar", title: "3 Days", description: "LIVE Intensive Workshop" },
-      { icon: "Tag", title: "₹2,999", description: "One-Time Workshop Fee" },
       { icon: "Map", title: "GMB + SEO", description: "Complete Local Visibility Framework" },
       { icon: "Bot", title: "AI Powered", description: "ChatGPT + Gemini + AI Tools" },
       { icon: "MonitorPlay", title: "LIVE Training", description: "Workshop లో నేరుగా నేర్చుకోండి" }
@@ -176,3 +175,4 @@ export const dictionaries = {
     mobileCta: "JOIN NOW —"
   }
 };
+

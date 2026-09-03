@@ -9,6 +9,7 @@ import { ThreeDayPlan } from "@/components/ThreeDayPlan";
 import { Transformation } from "@/components/Transformation";
 import { AudienceSection } from "@/components/AudienceSection";
 import { WhyIDMSmartTech } from "@/components/WhyIDMSmartTech";
+import { WorkshopDetailsImages } from "@/components/WorkshopDetailsImages";
 import { ValueStack } from "@/components/ValueStack";
 import { PricingSection } from "@/components/PricingSection";
 import { PaymentInstructions } from "@/components/PaymentInstructions";
@@ -33,6 +34,7 @@ export default function Home() {
           <Transformation />
           <AudienceSection />
           <WhyIDMSmartTech />
+          <WorkshopDetailsImages />
           <ValueStack />
           <PricingSection />
           <PaymentInstructions />

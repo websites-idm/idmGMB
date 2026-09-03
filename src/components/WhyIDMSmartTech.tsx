@@ -13,9 +13,9 @@ export function WhyIDMSmartTech() {
 
         <div className="grid sm:grid-cols-2 gap-6">
           {t.whyIdm.items.map((item, i) => (
-            <div key={i} className="flex gap-4 p-6 bg-card border rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-              <div className="mt-1 bg-primary/10 p-2 rounded-xl shrink-0 h-fit">
-                <CheckSquare className="h-5 w-5 text-primary" />
+            <div key={i} className="flex gap-4 p-6 bg-card border-2 border-yellow-400/60 hover:border-yellow-500 rounded-2xl shadow-sm hover:shadow-yellow transition-all duration-300 group">
+              <div className="mt-1 bg-yellow-100 p-2 rounded-xl shrink-0 h-fit group-hover:bg-yellow-200 transition-colors">
+                <CheckSquare className="h-5 w-5 text-yellow-600" />
               </div>
               <div>
                 <h3 className="font-bold text-lg mb-1 text-primary">{item.title}</h3>

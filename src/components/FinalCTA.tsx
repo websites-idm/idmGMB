@@ -19,7 +19,10 @@ export function FinalCTA() {
         
         <div className="bg-white/10 border border-white/20 rounded-2xl p-8 max-w-xl mx-auto backdrop-blur-sm mb-10 shadow-2xl">
           <p className="font-bold text-lg mb-2 text-white">{t.workshopName}</p>
-          <div className="text-5xl font-extrabold mb-6 text-brand-gradient">{site.price}</div>
+          <div className="flex items-center justify-center gap-4 mb-6">
+            <span className="text-3xl font-bold text-white/50 line-through decoration-red-500/70 decoration-2">₹6,999/-</span>
+            <div className="text-5xl font-extrabold text-brand-gradient">{site.price}</div>
+          </div>
           <div className="text-sm font-medium space-y-1 text-white/80">
             <p>UPI: {site.upiNumber}</p>
             <p>PhonePe • Google Pay • Paytm</p>

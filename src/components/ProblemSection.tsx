@@ -31,7 +31,7 @@ export function ProblemSection() {
           <div className="absolute top-0 left-0 w-full h-1 bg-yellow-gradient"></div>
           <p className="text-xl md:text-2xl font-bold leading-relaxed">
             {t.problem.conclusion1} <br/>
-            <span className="text-brand-gradient">{t.problem.conclusion2}</span>
+            <span className="text-amber-500 drop-shadow-sm font-extrabold text-2xl md:text-3xl mt-2 inline-block">{t.problem.conclusion2}</span>
           </p>
           <Button onClick={scrollToPricing} variant="outline" size="lg" className="gap-2 group px-8">
             {t.problem.cta} <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />

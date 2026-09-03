@@ -10,10 +10,15 @@ export function PricingSection() {
         <p className="text-lg text-muted-foreground mb-10 font-medium">{t.pricing.subtitle}</p>
         
         <div className="inline-block bg-background border rounded-2xl shadow-sm p-8 max-w-md w-full">
-          <h3 className="text-sm uppercase tracking-wide font-bold text-muted-foreground mb-2">{t.pricing.feeTitle}</h3>
-          <div className="text-5xl font-extrabold text-primary mb-6">{site.price}</div>
+          <h3 className="text-sm uppercase tracking-wide font-bold text-muted-foreground mb-1">
+            {t.pricing.feeTitle}
+          </h3>
+          <div className="flex items-center justify-center gap-4 mb-8">
+            <span className="text-3xl font-bold text-muted-foreground line-through decoration-red-500/70 decoration-2">₹6,999/-</span>
+            <div className="text-5xl font-extrabold text-primary">{site.price}</div>
+          </div>
           
-          <div className="border-t pt-6 text-sm text-muted-foreground space-y-2">
+          <div className="border-t border-border/50 pt-8 text-sm text-muted-foreground space-y-3">
             <p className="font-medium">{t.pricing.paymentMethodsTitle}</p>
             <div className="flex items-center justify-center gap-4 font-bold text-foreground">
               <span className="text-purple-600">PhonePe</span>
