@@ -6,11 +6,11 @@ export function SolutionSection() {
   const { t } = useLanguage();
 
   return (
-    <section className="py-24 bg-primary text-primary-foreground relative overflow-hidden">
+    <section className="pt-24 pb-24 bg-primary text-primary-foreground relative overflow-hidden">
       <div className="absolute inset-0 opacity-5 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent"></div>
       <div className="container mx-auto px-4 text-center relative z-10">
-        <div className="max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-5xl font-extrabold mb-6 leading-tight">
+        <div className="max-w-3xl mx-auto mb-12">
+          <h2 className="text-3xl md:text-5xl font-extrabold mb-6 leading-tight text-white">
             {t.solution.headline}
           </h2>
           <p className="text-lg md:text-xl font-medium text-white/80">

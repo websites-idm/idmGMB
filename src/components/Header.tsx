@@ -2,11 +2,11 @@
 import { useState, useEffect } from "react";
 import { useLanguage } from "@/context/LanguageContext";
 import { Button } from "./ui/button";
-import { Menu, X, Globe } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { scrollToPricing } from "@/lib/utils";
 
 export function Header() {
-  const { t, site, language, setLanguage } = useLanguage();
+  const { t, site } = useLanguage();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -36,26 +36,12 @@ export function Header() {
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
-          <button 
-            onClick={() => setLanguage(language === 'en' ? 'te' : 'en')}
-            className="flex items-center gap-1.5 text-sm font-bold text-primary hover:text-primary/70 transition-colors"
-          >
-            <Globe className="h-4 w-4" />
-            {language === 'en' ? 'తెలుగు' : 'English'}
-          </button>
           <Button variant="cta" onClick={scrollToPricing}>
             {t.nav.join} — {site.price}
           </Button>
         </div>
 
         <div className="flex md:hidden items-center gap-4">
-          <button 
-            onClick={() => setLanguage(language === 'en' ? 'te' : 'en')}
-            className="flex items-center gap-1.5 text-xs font-bold text-primary"
-          >
-            <Globe className="h-4 w-4" />
-            {language === 'en' ? 'తెలుగు' : 'EN'}
-          </button>
           <button className="p-1 text-primary" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             {mobileMenuOpen ? <X /> : <Menu />}
           </button>
