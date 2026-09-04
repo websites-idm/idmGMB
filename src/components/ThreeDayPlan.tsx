@@ -2,7 +2,7 @@
 import { useLanguage } from "@/context/LanguageContext";
 import { CheckCircle } from "lucide-react";
 import { Button } from "./ui/button";
-import { scrollToPricing } from "@/lib/utils";
+import { openRazorpay } from "@/lib/utils";
 
 export function ThreeDayPlan() {
   const { t } = useLanguage();
@@ -45,7 +45,7 @@ export function ThreeDayPlan() {
         </div>
         
         <div className="mt-16 text-center">
-           <Button onClick={scrollToPricing} variant="cta" size="lg" className="px-8 text-lg">
+           <Button onClick={openRazorpay} variant="cta" size="lg" className="px-8 text-lg">
              {t.plan.cta}
            </Button>
         </div>

@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { useLanguage } from "@/context/LanguageContext";
 import { Button } from "./ui/button";
-import { scrollToPricing, getWhatsAppLink } from "@/lib/utils";
+import { openRazorpay, getWhatsAppLink } from "@/lib/utils";
 import { MessageCircle } from "lucide-react";
 
 export function MobileStickyCTA() {
@@ -35,7 +35,7 @@ export function MobileStickyCTA() {
       </button>
 
       <div className="md:hidden fixed bottom-0 left-0 right-0 p-4 bg-white border-t border-border shadow-[0_-4px_10px_rgba(0,0,0,0.05)] z-50 animate-in slide-in-from-bottom-full">
-        <Button onClick={scrollToPricing} variant="cta" className="w-full text-base py-6 shadow-md">
+        <Button onClick={openRazorpay} variant="cta" className="w-full text-base py-6 shadow-md">
           {t.mobileCta} 
           <span className="line-through text-primary/50 text-sm ml-2 mr-1">₹6,999/-</span>
           <span className="text-red-700 ml-1">{site.price}</span>

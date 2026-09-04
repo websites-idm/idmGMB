@@ -1,5 +1,7 @@
 "use client";
 import { useLanguage } from "@/context/LanguageContext";
+import { Button } from "./ui/button";
+import { openRazorpay } from "@/lib/utils";
 
 export function PricingSection() {
   const { t, site } = useLanguage();
@@ -30,6 +32,11 @@ export function PricingSection() {
             <p className="mt-4 text-base font-bold text-foreground">
               UPI: <span className="text-xl font-extrabold">{site.upiNumber}</span>
             </p>
+            <div className="mt-6 pt-4">
+              <Button onClick={openRazorpay} variant="cta" size="lg" className="w-full text-lg shadow-lg hover:scale-105 transition-transform animate-pulse">
+                Pay Securely via Razorpay
+              </Button>
+            </div>
           </div>
         </div>
       </div>

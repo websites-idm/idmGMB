@@ -2,7 +2,8 @@
 import { useLanguage } from "@/context/LanguageContext";
 import { Check } from "lucide-react";
 import { Button } from "./ui/button";
-import { scrollToPricing } from "@/lib/utils";
+import { openRazorpay } from "@/lib/utils";
+import { CheckoutButton } from "./CheckoutButton";
 
 export function ValueStack() {
   const { t, site } = useLanguage();
@@ -31,9 +32,7 @@ export function ValueStack() {
               <span className="text-3xl font-bold text-muted-foreground line-through decoration-red-500/70 decoration-2">₹6,999/-</span>
               <div className="text-5xl font-extrabold text-primary">{site.price}</div>
             </div>
-            <Button onClick={scrollToPricing} variant="cta" size="lg" className="w-full sm:w-auto px-12 text-lg">
-              {t.valueStack.cta}
-            </Button>
+            <CheckoutButton />
           </div>
         </div>
       </div>

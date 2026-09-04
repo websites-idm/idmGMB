@@ -6,9 +6,6 @@ export function getWhatsAppLink() {
   return `https://wa.me/${siteConfig.whatsappNumber}?text=${encodedMessage}`;
 }
 
-export function scrollToPricing() {
-  const element = document.getElementById('pricing');
-  if (element) {
-    element.scrollIntoView({ behavior: 'smooth' });
-  }
+export function openRazorpay() {
+  window.open("https://rzp.io/rzp/kIA0I6Xo", "_blank");
 }

@@ -11,7 +11,7 @@ export function SolutionSection() {
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-5xl font-extrabold mb-6 leading-tight text-white">
-            {t.solution.headline}
+            <span className="text-yellow-400">GMB</span> ని అర్థం చేసుకోవడానికి కావాల్సినవన్నీ — ఒకే Structured <span className="text-yellow-400">Workshop</span> లో
           </h2>
           <p className="text-lg md:text-xl font-medium text-white/80">
             {t.solution.subtitle}

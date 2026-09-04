@@ -1,8 +1,9 @@
 "use client";
 import { useLanguage } from "@/context/LanguageContext";
 import { Button } from "./ui/button";
-import { scrollToPricing } from "@/lib/utils";
+import { openRazorpay } from "@/lib/utils";
 import Image from "next/image";
+import { CheckoutButton } from "./CheckoutButton";
 
 export function Hero() {
   const { t, site } = useLanguage();
@@ -18,23 +19,31 @@ export function Hero() {
               🚀 {t.hero.presents}
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
-              {t.hero.headline}
+              <span className="text-yellow-400">కేవలం 3 రోజుల్లో</span> Google Business Profile & Local SEO లో Master అవ్వండి
             </h1>
-            <p className="text-xl md:text-2xl font-bold text-white/90 font-display">
-              {t.workshopName}
-            </p>
+            <div className="relative w-full max-w-sm mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20 mt-6 mb-4">
+              <Image 
+                src="/details1.jpeg" 
+                alt="Workshop Details" 
+                width={600} 
+                height={400} 
+                className="w-full h-auto object-cover"
+                priority
+              />
+            </div>
+            <div className="pt-2">
+              <span className="text-xl md:text-2xl font-bold font-display bg-red-600 text-white px-4 py-2 rounded-xl shadow-lg inline-block">
+                {t.workshopName}
+              </span>
+            </div>
             <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
               {t.hero.subtitle}
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
-            <a href="#pricing" className="w-full sm:w-auto">
-              <Button size="lg" variant="cta" className="w-full px-8 py-3 shadow-[0_0_30px_rgba(255,196,0,0.5)] animate-pulse hover:scale-105 transition-transform text-lg border-2 border-white/50">
-                {t.hero.ctaPrimary}
-              </Button>
-            </a>
-            <a href="#curriculum" className="text-sm font-bold text-white/80 hover:text-white transition-colors">
+          <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start mt-8">
+            <CheckoutButton />
+            <a href="#curriculum" className="text-sm font-bold text-white/80 hover:text-white transition-colors mt-4 sm:mt-0">
               {t.hero.ctaSecondary}
             </a>
           </div>

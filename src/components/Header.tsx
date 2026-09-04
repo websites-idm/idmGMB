@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useLanguage } from "@/context/LanguageContext";
 import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
-import { scrollToPricing } from "@/lib/utils";
+import { openRazorpay } from "@/lib/utils";
 
 export function Header() {
   const { t, site } = useLanguage();
@@ -36,7 +36,7 @@ export function Header() {
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
-          <Button variant="cta" onClick={scrollToPricing}>
+          <Button variant="cta" onClick={openRazorpay}>
             {t.nav.join} — {site.price}
           </Button>
         </div>
@@ -56,7 +56,7 @@ export function Header() {
             <a href="#audience" onClick={() => setMobileMenuOpen(false)}>{t.nav.audience}</a>
             <a href="#faq" onClick={() => setMobileMenuOpen(false)}>{t.nav.faq}</a>
           </nav>
-          <Button variant="cta" onClick={() => { scrollToPricing(); setMobileMenuOpen(false); }} className="w-full">
+          <Button variant="cta" onClick={() => { openRazorpay(); setMobileMenuOpen(false); }} className="w-full">
             {t.nav.join} — {site.price}
           </Button>
         </div>

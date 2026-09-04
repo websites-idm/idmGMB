@@ -12,7 +12,6 @@ import { WhyIDMSmartTech } from "@/components/WhyIDMSmartTech";
 import { WorkshopDetailsImages } from "@/components/WorkshopDetailsImages";
 import { ValueStack } from "@/components/ValueStack";
 import { PricingSection } from "@/components/PricingSection";
-import { PaymentInstructions } from "@/components/PaymentInstructions";
 import { FAQ } from "@/components/FAQ";
 import { FinalCTA } from "@/components/FinalCTA";
 import { Footer } from "@/components/Footer";
@@ -37,7 +36,6 @@ export default function Home() {
           <WorkshopDetailsImages />
           <ValueStack />
           <PricingSection />
-          <PaymentInstructions />
           <FAQ />
           <FinalCTA />
         </main>
