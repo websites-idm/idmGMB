@@ -21,14 +21,11 @@ export function Hero() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
               <span className="text-yellow-400">కేవలం 3 రోజుల్లో</span> Google Business Profile & Local SEO లో Master అవ్వండి
             </h1>
-            <div className="relative w-full max-w-sm mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20 mt-6 mb-4">
-              <Image 
+            <div className="w-full max-w-sm mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-xl border-2 border-white/20 mt-6 mb-4 relative z-20">
+              <img 
                 src="/details1.jpeg" 
                 alt="Workshop Details" 
-                width={600} 
-                height={400} 
                 className="w-full h-auto object-cover"
-                priority
               />
             </div>
             <div className="pt-2">
