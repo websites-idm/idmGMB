@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useLanguage } from "@/context/LanguageContext";
 import { Button } from "./ui/button";
 import { openRazorpay, getWhatsAppLink } from "@/lib/utils";
-import { MessageCircle } from "lucide-react";
+import Image from "next/image";
 
 export function MobileStickyCTA() {
   const { t, site } = useLanguage();
@@ -28,10 +28,10 @@ export function MobileStickyCTA() {
     <>
       <button 
         onClick={() => window.open(getWhatsAppLink(), "_blank")}
-        className="fixed bottom-24 md:bottom-8 right-4 md:right-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-xl hover:scale-110 transition-transform"
+        className="fixed bottom-24 md:bottom-8 right-4 md:right-8 z-50 hover:scale-110 transition-transform flex items-center justify-center drop-shadow-xl"
         aria-label="Contact on WhatsApp"
       >
-        <MessageCircle className="h-6 w-6" />
+        <Image src="/whatsapp.png" alt="WhatsApp" width={64} height={64} className="w-14 h-14 md:w-16 md:h-16 object-contain" />
       </button>
 
       <div className="md:hidden fixed bottom-0 left-0 right-0 p-4 bg-white border-t border-border shadow-[0_-4px_10px_rgba(0,0,0,0.05)] z-50 animate-in slide-in-from-bottom-full">
