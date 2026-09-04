@@ -18,7 +18,7 @@ export function Hero() {
             <div className="inline-block rounded-full bg-white/10 border border-white/20 backdrop-blur px-4 py-1.5 text-sm font-bold text-white mb-2 tracking-wide uppercase">
               🚀 {t.hero.presents}
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight break-words">
               <span className="text-yellow-400">కేవలం 3 రోజుల్లో</span> Google Business Profile & Local SEO లో Master అవ్వండి
             </h1>
             <div className="w-full max-w-sm mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-xl border-2 border-white/20 mt-6 mb-4 relative z-20">
@@ -29,7 +29,7 @@ export function Hero() {
               />
             </div>
             <div className="pt-2">
-              <span className="text-xl md:text-2xl font-bold font-display bg-red-600 text-white px-4 py-2 rounded-xl shadow-lg inline-block">
+              <span className="text-lg sm:text-xl md:text-2xl font-bold font-display bg-red-600 text-white px-3 md:px-4 py-2 rounded-xl shadow-lg inline-block whitespace-normal text-center leading-snug">
                 {t.workshopName}
               </span>
             </div>
@@ -75,7 +75,7 @@ export function Hero() {
             </div>
             
             {/* Info Card - Overlapping */}
-            <div className="bg-yellow-gradient w-[105%] max-w-[400px] rounded-3xl p-6 md:p-8 shadow-yellow relative z-20 -mt-12 transition-transform duration-500 group-hover:-translate-y-4">
+            <div className="bg-yellow-gradient w-full sm:w-[105%] max-w-[400px] rounded-3xl p-6 md:p-8 shadow-yellow relative z-20 -mt-12 transition-transform duration-500 group-hover:-translate-y-4">
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
                 <span className="text-primary font-bold text-xs tracking-widest uppercase">
