@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
@@ -20,9 +21,7 @@ export function Header() {
     <header className={`fixed top-0 z-50 w-full transition-all duration-300 ${isScrolled ? "bg-white/90 backdrop-blur-md border-b border-border shadow-sm py-3" : "bg-white py-5"}`}>
       <div className="container mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="h-10 w-10 rounded-xl bg-yellow-gradient grid place-items-center shadow-yellow">
-            <span className="font-display font-extrabold text-primary text-lg">I</span>
-          </div>
+          <Image src="/favicon.png" alt={site.brandName} width={40} height={40} className="object-contain" />
           <span className="font-display font-extrabold text-xl tracking-tight text-primary">
             {site.brandName}
           </span>

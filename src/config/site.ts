@@ -5,7 +5,7 @@ export const siteConfig = {
   price: "₹2,999/-",
   upiNumber: "8519837818",
   whatsappNumber: "918519837818", // Will configure correctly, defaulting to the UPI number as placeholder
-  metaPixelId: "META_PIXEL_ID",
+  metaPixelId: "1791187135536201",
   gaMeasurementId: "GA_MEASUREMENT_ID",
   paymentMethods: ["PhonePe", "Google Pay", "Paytm"]
 };
