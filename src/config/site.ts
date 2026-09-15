@@ -2,7 +2,7 @@ export const siteConfig = {
   brandName: "IDM Smart Tech",
   websiteUrl: "https://idmsmarttech.in",
   workshopName: "3-Day LIVE GMB Mastery Workshop",
-  price: "₹2,999/-",
+  price: "₹299/-",
   upiNumber: "8519837818",
   whatsappNumber: "918519837818", // Will configure correctly, defaulting to the UPI number as placeholder
   metaPixelId: "1791187135536201",
