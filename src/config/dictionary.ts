@@ -1,7 +1,7 @@
 export const siteData = {
   brandName: "IDM Smart Tech",
   websiteUrl: "https://idmsmarttech.in",
-  price: "₹299/-",
+  price: "₹0/-",
   upiNumber: "8519837818",
   whatsappNumber: "918519837818",
   metaPixelId: "META_PIXEL_ID",
